@@ -1,0 +1,32 @@
+@tailwind base;
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+.all,.cart,.logo{
+    @apply flex justify-center items-center
+}
+.icon{
+    @apply mx-auto my-1
+}
+.card-compact .card-body{
+    @apply p-[0.4rem]
+}
+.heading{
+    @apply font-bold font-serif text-xl ml-4 my-2 py-2
+}
+.assist{
+    @apply text-[14px] sm:text-[16px] xl:text-[18px] text-center font-bold font-sans bg-clip-text text-transparent bg-gradient-to-r from-pink-700 to-cyan-400 mx-auto
+}
+}
